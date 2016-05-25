@@ -1,0 +1,23 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title 聚范主播视频墙
+		link(rel='stylesheet',href='/css/video_wall.css')
+	body#app
+		div#wrap
+			div#main
+				ul
+					each item in lists
+						li
+							div.openBtn
+							div.player_box(id="#{item.uid}",name="#{item.name}")
+								img(src="#{item.midheadimg}")
+			div#detail_video(style='display:none;')
+				div#big_player
+				div.detail_information
+				div.detail_control
+					div.down_from_line 下线
+			div#black_blank(style='display:none;')
+	script(src="js/jquery.js")
+	script(src="js/index.js")

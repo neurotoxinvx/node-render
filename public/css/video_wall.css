@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0079ff;
+}
+
+html body {
+  font-size: 14px;
+  font-family: "微软雅黑","宋体","Arial Narrow","HELVETICA";
+  width: 100%;
+  height: 100%;
+}
+
+a, img, input, textarea, button {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  /*
+  appearance: none;
+  -webkit-appearance: none;
+  */
+  outline: none;
+}
+a:active, a:focus, img:active, img:focus, input:active, input:focus, textarea:active, textarea:focus, button:active, button:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+body {
+  min-width: 1100px;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#search_area {
+  padding: 10px;
+  overflow: hidden;
+}
+#search_area .search {
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  float: left;
+}
+#search_area .search input {
+  width: 160px;
+  height: 20px;
+  text-indent: 10px;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+}
+#search_area #search_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFF;
+  background-color: #006e9d;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+}
+#search_area #search_btn:hover {
+  opacity: 0.8;
+}
+
+#all_control_menu {
+  padding: 10px;
+  overflow: hidden;
+}
+#all_control_menu div {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #FFF;
+  float: right;
+}
+#all_control_menu div:hover {
+  opacity: 0.8;
+}
+#all_control_menu .all_play_btn {
+  background-color: #006600;
+  margin-right: 10px;
+}
+#all_control_menu .all_pause_btn {
+  background-color: #ff3333;
+}
+
+#chose_length {
+  text-align: right;
+}
+#chose_length span {
+  color: #006e9d;
+  line-height: 25px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+#main {
+  width: 980px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+#main ul {
+  width: 1000px;
+}
+#main ul li {
+  width: 180px;
+  margin: 10px 10px 0 0;
+  box-shadow: 3px 8px 15px #cccccc;
+  float: left;
+  position: relative;
+}
+#main ul li .openBtn {
+  width: 180px;
+  height: 299px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 98;
+  cursor: pointer;
+}
+#main ul li .player_box {
+  width: 180px;
+  height: 299px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#pages_break {
+  padding: 40px 0;
+  text-align: center;
+}
+#pages_break a {
+  color: #666;
+  padding: 5px 10px;
+  border: 1px solid #666;
+  border-radius: 7px;
+  text-align: center;
+}
+#pages_break a:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+#detail_video {
+  width: 600px;
+  height: 630px;
+  background-color: #FFF;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -315px;
+  z-index: 100;
+}
+#detail_video #big_player {
+  width: 522;
+  padding: 0 39px;
+  height: 522px;
+  background-color: #000;
+  margin: 0 auto;
+}
+#detail_video .detail_information {
+  padding: 20px;
+  overflow: hidden;
+}
+#detail_video .detail_information span {
+  width: 33%;
+  display: block;
+  text-align: center;
+  float: left;
+}
+#detail_video .detail_control {
+  text-align: center;
+}
+#detail_video .detail_control div {
+  padding: 5px 25px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: inline;
+  color: #FFF;
+  cursor: pointer;
+  margin: 0 5px;
+}
+#detail_video .detail_control div:hover {
+  opacity: 0.8;
+}
+#detail_video .detail_control .down_from_line {
+  background-color: #F00;
+}
+#detail_video .detail_control .add_to_white {
+  padding: 4px 24px;
+  color: #000;
+  border: 1px solid #CCC;
+}
+
+#black_blank {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  cursor: pointer;
+}
